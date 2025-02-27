@@ -59,7 +59,7 @@ namespace CARS_WPF
             if (cbCountries.SelectedItem == null) return;
 
             string selectedCountry = cbCountries.SelectedItem.ToString();
-            Customers.Clear();  // Meglévő lista törlése
+            Customers.Clear();
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {

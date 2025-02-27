@@ -24,13 +24,19 @@
             <Button x:Name="btnC" Width="120" Height="30" Margin="10">c.) feladat</Button>
         </StackPanel>
 
-        <ListBox x:Name="lbOrderDetails" Grid.Row="1" Grid.Column="1" Margin="10">
+        <ListBox x:Name="lbOrderDetails" 
+                 Grid.Row="1" 
+                 Grid.Column="1" 
+                 Margin="10">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding ProductName}" />
-                        <TextBlock Text="{Binding BuyPrice, StringFormat={}{0:C}}" />
-                    </StackPanel>
+                    <Border BorderBrush="Black" BorderThickness="0 0 0 1" Width="300">
+                        <StackPanel>
+                            <TextBlock Text="{Binding ProductName}" />
+                            <TextBlock Text="{Binding BuyPrice}" />
+                        </StackPanel>
+                    </Border>
+                    
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
