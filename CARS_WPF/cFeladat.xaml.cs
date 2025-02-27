@@ -130,10 +130,5 @@ namespace CARS_WPF
             b.Show();
             this.Close();
         }
-
-        private void dgOrders_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }
