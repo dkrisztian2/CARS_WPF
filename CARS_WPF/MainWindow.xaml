@@ -1,0 +1,40 @@
+﻿<Window x:Class="CARS_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CARS_WPF"
+        mc:Ignorable="d"
+        Title="a. Feladat" Height="600" Width="850"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="btnA" Width="120" Height="30" Margin="10">a.) feladat</Button>
+            <Button x:Name="btnB" Click="btnB_Click" Width="120" Height="30" Margin="10">b.) feladat</Button>
+            <Button x:Name="btnC" Click="btnC_Click" Width="120" Height="30" Margin="10">c.) feladat</Button>
+        </StackPanel>
+
+        <ListBox Grid.Column="1" x:Name="lbProducts" SelectionChanged="lbProducts_SelectionChanged" Margin="10">
+            
+        </ListBox>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label FontSize="20">
+                Rendelések száma:
+            </Label>
+            <Label x:Name="lblProductCount" FontSize="20">
+                
+            </Label>
+        </StackPanel>
+    </Grid>
+</Window>
