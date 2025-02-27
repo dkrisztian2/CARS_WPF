@@ -31,7 +31,8 @@
                   Grid.Column="1" 
                   Width="250" 
                   Height="70"
-                  FontSize="20">
+                  FontSize="20"
+                  ScrollViewer.CanContentScroll="False">
         </ComboBox>
 
         <DataGrid x:Name="dgCustomers" 
