@@ -37,7 +37,8 @@
         <DataGrid x:Name="dgCustomers" 
                   Grid.Column="1" 
                   Grid.Row="1" 
-                  Margin="10">
+                  Margin="10"
+                  CanUserAddRows="False">
         </DataGrid>
     </Grid>
 </Window>

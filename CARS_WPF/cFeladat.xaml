@@ -45,7 +45,8 @@
                   AutoGenerateColumns="True" 
                   SelectionChanged="dgOrders_SelectionChanged"
                   Grid.Column="1"
-                  Margin="10">
+                  Margin="10"
+                  CanUserAddRows="False">
         </DataGrid>
     </Grid>
 </Window>
